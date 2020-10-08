@@ -11,4 +11,12 @@ for i in range(n):
     else:
         b.append(a[i])
 
-print("".join(b))
+print("".join(b)) 
+
+n=int(input()) 
+string=list(input()) 
+stack=[]
+[stack.pop() if stack and stack[-1]==i else stack.append(i) for i in string]
+print(len(stack),"".join(stack),sep="\n")
+
+
